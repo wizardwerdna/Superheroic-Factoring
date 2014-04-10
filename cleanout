@@ -1,0 +1,11 @@
+#! /usr/bin/env sh
+rm -rf test/*
+rm -rf app/scripts
+rm -rf app/views
+rm app/*.js
+rm app/*.html
+rm -rf .git
+git init
+git add -A
+git commit -m "initial commit"
+karma start
