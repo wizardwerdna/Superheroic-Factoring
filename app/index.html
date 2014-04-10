@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Superheroic Factoring</title>
+<link rel="stylesheet" type="text/css" href="styles/app.css" media="all">
+</head>
+<body>
+<div ng-app="app" ng-controller="AppVM as vm">
+  <div class="jumbotron">
+    <h1>Superheroic Factoring</h1>
+    <p>an AngularJS Kata</p>
+  </div>
+  <div class="well">
+    <input class="number" type="number" ng-model="vm.number">
+  </div>
+  <div class="well">
+    <div class="factors">{{ vm.factor(vm.number) }}</div>
+  </div>
+</div>
+<script src="bower_components/angular/angular.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
